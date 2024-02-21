@@ -1,0 +1,298 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+.form-element {
+  width: 100%;
+  padding: 13px 12px;
+  border: none;
+  font-size: 14px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.form-row {
+  margin-bottom: 15px;
+}
+.form-button {
+  background: #ffc107; /* Colore di sfondo */
+  color: #212529; /* Colore del testo */
+  cursor: pointer;
+  margin-top: 15px; /* Distanza dal bordo superiore */
+}
+
+.form-padding {
+  padding-bottom: 12px;
+}
+
+.form-button:hover {
+  background: #ffca2c; /* Colore di sfondo al passaggio del mouse */
+}
+.form-container {
+  background-color: #f8f9fa; /* Colore di sfondo */
+  border: 2px solid #28a745; /* Colore del bordo */
+  border-radius: 10px; /* Bordo arrotondato */
+  padding: 20px; /* Spaziatura interna */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra */
+}
+/* Colori degli input */
+.form-control {
+  background-color: #e9ecef; /* Colore di sfondo dell'input */
+  border-color: #28a745; /* Colore del bordo dell'input */
+}
+/* Modifica l'aspetto del form durante la validazione */
+.form-control:valid, .was-validated .form-control:valid {
+  border-color: #28a745; /* Colore del bordo valido */
+}
+
+.form-control:invalid, .was-validated .form-control:invalid {
+  border-color: #dc3545; /* Colore del bordo non valido */
+}
+
+/* Colore del testo nell'input durante la validazione */
+.form-control:valid ~ .form-text, .was-validated .form-control:valid ~ .form-text {
+  color: #28a745; /* Colore del testo valido */
+}
+
+.form-control:invalid ~ .form-text, .was-validated .form-control:invalid ~ .form-text {
+  color: #dc3545; /* Colore del testo non valido */
+}
+
+/* Colori del testo */
+.form-text {
+  color: #6c757d;
+}
+
+
+
+.top5 {
+  margin-top: 5px;
+}
+
+.top7 {
+  margin-top: 7px;
+}
+
+.top10 {
+  margin-top: 10px;
+}
+
+.top15 {
+  margin-top: 15px;
+}
+
+.top17 {
+  margin-top: 17px;
+}
+
+.top30 {
+  margin-top: 30px;
+}
+
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
+
+.selector {
+  max-width: 160px;
+}
+.parameters {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+
+/* ThesisPage.css */
+.thesis-card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.border-top {
+  border-top: 1px solid #dee2e6;
+}
+
+.active-toggle-button {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+}
+
+.active-toggle-button:hover {
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+
+.not-active-toggle-button {
+  background-color: #ffa570;
+  border-color: #ffa570;
+}
+
+.not-active-toggle-button:hover {
+  background-color: var(--orange) !important;
+  border-color: var(--orange) !important;
+}
+
+/* restyle */
+/* declare variables in root starting with --*/
+
+:root{
+ --navy : #2a4b98;
+ --orange : #ff8036;
+}
+  
+
+/* -------------------Navbar---------------------------- */
+
+.navbar {
+  background-color: #0e7429;
+  padding: 10px 20px;
+}
+.navbar-brand {
+  margin-bottom: 100px;
+}
+
+.app-title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Text color */
+.text-light {
+  color: white;
+}
+
+/* Clock icon styling */
+.text-light span {
+  cursor: pointer;
+}
+
+/* Logout button */
+.btn-outline-light {
+  color: white;
+  border-color: white;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color: var(--navy);
+}
+
+.clock-icon:hover {
+  cursor: pointer;
+}
+
+/* Styles for Navbar links in the lower part */
+
+.lower-navbar {
+  background-color: var(--orange);
+  padding: 10px 20px;
+  border: 2px solid white;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  background-color: var(--orange); 
+  color:  white;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 300ms ease-in
+}
+.nav-link:hover{
+  color:  white;
+  text-decoration: none;
+  background-color: rgba(42, 75, 152, 0.25);
+}
+
+
+/* Styles for active links in the lower part */
+.lower-navbar .nav-link.active {
+  background-color: white;
+  color:  var(--orange);
+  font-size: 1.2rem; /* Adjust the font size as needed */
+
+
+}
+
+/* Styles for Logout button in the lower part */
+.lower-navbar .btn-outline-light {
+  color: white;
+  border-color: white;
+}
+
+.lower-navbar  {
+  background-color: #ff8036;
+  color: white;
+}
+
+.btn-outline-light:hover {
+  background-color: white;
+  color:  #ff8036;
+}
+.navbar-toggler{
+
+  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  background-color: white; /* Set the background color */
+  padding: 10px;
+}
+
+/* Styling for the Navbar collapse button when active (open) */
+.navbar-toggler.collapsed {
+
+  border-radius: 4px; /* Optional: Add border-radius for rounded corners */
+  background-color: white; /* Set the background color */
+  padding: 10px;
+}
+.bold-label {
+  font-weight: bold;
+}
+/* Aggiungi la classe logo-height */
+.logo-height {
+  height: 150px; /* Modifica l'altezza secondo le tue preferenze */
+}
+.logo-dimensions {
+  width: 401px;
+  height: 146px;
+}
